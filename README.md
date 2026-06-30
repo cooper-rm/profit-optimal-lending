@@ -16,7 +16,7 @@ for *profit* beats optimizing for *accuracy* — and by how much.
 ## The question I'm actually answering
 
 > For a consumer lender's credit-risk desk: which applicants are profitable to
-> approve once you weigh each one's default probability against their loan size and
+> approve for a loan once you weigh each one's default probability against their loan size and
 > the lopsided cost of a default — and does a profit-driven lending policy beat an
 > accuracy-driven one on risk-adjusted return?
 
