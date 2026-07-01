@@ -431,6 +431,9 @@ FodyWeavers.xsd
 # Course material — not part of the deliverable repo
 lecture-slides/
 
+# Private LLM-collaboration brainstorm notes — keep local, do not publish
+llm-collaboration/
+
 # Data — never commit the Home Credit files (large + competition T&Cs)
 data/
 *.csv
