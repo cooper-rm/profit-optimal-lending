@@ -15,10 +15,9 @@ for *profit* beats optimizing for *accuracy* — and by how much.
 
 ## The question I'm actually answering
 
-> For a consumer lender's credit-risk desk: which applicants are profitable to
-> approve for a loan once you weigh each one's default probability against their loan size and
-> the lopsided cost of a default — and does a profit-driven lending policy beat an
-> accuracy-driven one on risk-adjusted return?
+> For a consumer lender's credit-risk desk: can we optimize a lending model around
+> expected value, future return modeling, and risk modeling in order to boost lending
+> profit relative to a standard AUC-optimized model?
 
 The stakeholder is the risk desk. The decision is approve, decline, or size the
 loan. Everything here is built to answer that, not to climb a ranking.
@@ -57,6 +56,11 @@ accuracy — the cost of a default is too lopsided for that. The payoff of the w
 project is the gap between those two policies, measured in portfolio P&L and
 risk-adjusted return.
 
+And I don't ask that only once. After calibrating, I generate a range of risk
+scenarios — different assumptions about losses, interest rates, and downturns — and
+re-run the comparison inside each. The finding isn't a single winner; it's a map of
+*when* a profit-first policy beats an accuracy-first one, and when it doesn't.
+
 What makes it worth doing: the two policies genuinely disagree about who to lend to.
 That disagreement *is* the finding.
 
@@ -75,13 +79,7 @@ notebooks/    work in project order — EDA → features → models → calibrat
 src/          reusable code once it graduates out of the notebooks
 data/          the Home Credit tables (not committed — download from Kaggle)
 reports/      figures for the writeup and the final talk
-IDEAS.md      working notes and methodology decisions
 ```
 
 Right now the focus is EDA — one notebook per source table under `notebooks/01_eda/`,
 getting to know the data before any modeling.
-
----
-
-*Methodology decisions, rationale, and a couple of extensions I'm exploring
-(risk-based pricing, macro stress-testing) are in [`IDEAS.md`](IDEAS.md).*

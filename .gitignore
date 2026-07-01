@@ -434,6 +434,9 @@ lecture-slides/
 # Private LLM-collaboration brainstorm notes — keep local, do not publish
 llm-collaboration/
 
+# Private working notes — keep local, do not publish
+IDEAS.md
+
 # Data — never commit the Home Credit files (large + competition T&Cs)
 data/
 *.csv
