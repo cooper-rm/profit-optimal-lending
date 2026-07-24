@@ -1,0 +1,25 @@
+# Core EDA environment for the Home Credit practicum.
+# Minimal for now — modeling/calibration libs (lightgbm, xgboost, catboost,
+# scikit-learn, polars, shap) get added as the project reaches those phases.
+
+numpy
+pandas<3            # ydata-profiling pins pandas<3; whole project runs on pandas 2.x
+scikit-learn
+matplotlib
+seaborn
+
+# Auto-EDA
+ydata-profiling
+setuptools<81       # ydata-profiling needs pkg_resources, removed in setuptools 81+
+
+# Modeling / selection
+lightgbm
+xgboost
+catboost
+shap
+optuna
+torch
+
+# Notebooks
+jupyterlab
+ipykernel
